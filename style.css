@@ -1,4 +1,4 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@ body {
   height: 100vh;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .container {
@@ -21,6 +22,11 @@ body {
   box-shadow: 30px 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
 
 }
 .container h1 {
@@ -36,4 +42,81 @@ body {
   border-radius: 5px;
   outline: none;
   transition: border 0.3s;
+}
+button {
+  background-color: rgb(50, 50, 222);
+  color: white;
+  height: 45px;
+  width: 180px;
+  border-radius: 5px;
+  font-size: 15px;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: beige;
+}
+
+.mainContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+ background-color: rgba(88, 88, 189, 0.902);
+ width: 40%;
+ /* height: 400px; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px black;
+ transition: all 0.3s linear 0s;
+
+}
+
+
+
+.container:hover{
+  box-shadow: 0.5px 0.5px 15px black;
+  transform: scale(1.01);
+}
+
+.container h2{
+  color: white;
+}
+
+.inputBox{
+  width: 100%;
+  padding: 0 10px;
+  
+}
+
+.inputBox input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  
+  
+}
+
+.inputBox input[type = "text"]{
+  font-size: 20px;
+}
+
+.inputBox input:focus{
+  box-shadow: 1px 1px 10px black;
 }
