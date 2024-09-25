@@ -89,11 +89,12 @@ body{
 
 .container:hover{
   box-shadow: 0.5px 0.5px 15px black;
-  transform: scale(1.01);
+  
 }
 
-.container h2{
+.container h1{
   color: white;
+ 
 }
 
 .inputBox{
@@ -115,8 +116,39 @@ body{
 
 .inputBox input[type = "text"]{
   font-size: 20px;
+  font-weight: bold;
 }
 
 .inputBox input:focus{
   box-shadow: 1px 1px 10px black;
+}
+
+.btnBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBox button{
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.todoList{
+  width: 100%;
+  padding: 10px;
+}
+
+.todoList ul {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
 }
