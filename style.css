@@ -60,6 +60,7 @@ button {
 
 body{
   background-color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .mainContainer{
@@ -145,10 +146,25 @@ body{
   padding: 10px;
 }
 
-.todoList ul {
+ .ulList {
   width: 100%;
   height: auto;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.styledLi {
+  
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+ 
 }
