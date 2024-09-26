@@ -11,6 +11,12 @@ todoBtn.addEventListener("click", function () {
   const li = document.createElement("li");
   li.textContent = inputText.value;
   li.classList.add("styledLi");
+
+  // create remove button
+
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "Remove";
+
   ul.appendChild(li);
   ul.classList.add("ulList");
 });
