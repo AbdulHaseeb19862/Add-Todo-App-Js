@@ -9,13 +9,21 @@ todoBtn.addEventListener("click", function () {
 
   // create li element
   const li = document.createElement("li");
-  li.textContent = inputText.value;
+
+  // creat span element
+  const span = document.createElement("span");
+  span.textContent = inputText.value;
+  li.appendChild(span);
   li.classList.add("styledLi");
+
+  // On text we add toggle button functionality now
+
+  
 
   // create remove button
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
-  removeBtn.classList.add("removeBTN")
+  removeBtn.classList.add("removeBTN");
   li.appendChild(removeBtn);
 
   ul.appendChild(li);
