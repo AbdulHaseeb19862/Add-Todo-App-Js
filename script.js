@@ -13,9 +13,9 @@ todoBtn.addEventListener("click", function () {
   li.classList.add("styledLi");
 
   // create remove button
-
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
+  li.appendChild(removeBtn);
 
   ul.appendChild(li);
   ul.classList.add("ulList");
