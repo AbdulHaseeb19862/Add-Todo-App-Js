@@ -59,6 +59,7 @@ button {
 }
 
 body{
+
   background-color: beige;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -72,7 +73,7 @@ body{
 }
 .container{
  background-color: rgba(88, 88, 189, 0.902);
- width: 40%;
+ width: 50%;
  /* height: 400px; */
  display: flex;
  flex-direction: column;
@@ -94,6 +95,7 @@ body{
 }
 
 .container h1{
+
   color: white;
  
 }
@@ -197,6 +199,21 @@ body{
   color: gray;
 }
 
-/* .removeBTN:hover {
-  transform: scale(1.03);
-} */
+@media (max-width: 1024px){
+  .container{
+    width:65%;  
+   }
+}
+
+@media (max-width: 768px){
+  .container{
+    width:85%;  
+   }
+}
+
+
+@media (max-width: 550px){
+  .container{
+    width:95%;  
+   }
+}

@@ -38,4 +38,5 @@ todoBtn.addEventListener("click", function () {
   li.appendChild(removeBtn);
 
   ul.appendChild(li);
+  inputText.value = "";
 });
