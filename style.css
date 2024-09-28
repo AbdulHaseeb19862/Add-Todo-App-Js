@@ -183,8 +183,18 @@ body{
   color: white;
   cursor: pointer;
   box-shadow: 0px 0px 5px black;
-  transition: all 0.3s linear 0s;
+  transition: all 0.3s ease-in 0s;
   
+}
+
+.removeBTN:hover {
+  background-color: rgb(189, 21, 21);
+}
+
+.toggleText {
+  transition: all 0.3s ease-in 0s;
+  text-decoration: line-through;
+  color: gray;
 }
 
 /* .removeBTN:hover {

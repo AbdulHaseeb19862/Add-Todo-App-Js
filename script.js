@@ -17,15 +17,25 @@ todoBtn.addEventListener("click", function () {
   li.classList.add("styledLi");
 
   // On text we add toggle button functionality now
-
-  
+  span.addEventListener("click", function () {
+    span.classList.toggle("toggleText");
+  });
 
   // create remove button
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
   removeBtn.classList.add("removeBTN");
+  ul.classList.add("ulList");
+  removeBtn.addEventListener("click", function () {
+    ul.removeChild(li);
+
+    // Check if there are no more list items in the ul
+    if (ul.children.length === 0) {
+      ul.classList.remove("ulList");
+    }
+  });
+
   li.appendChild(removeBtn);
 
   ul.appendChild(li);
-  ul.classList.add("ulList");
 });
